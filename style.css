@@ -1,0 +1,90 @@
+/* Grundlayout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Kopf- und Fußbereich */
+header, footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Krypto-Bilderbereich */
+.crypto-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.crypto-images img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.crypto-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Inhalt */
+.content {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* Kursanzeige */
+.kurs {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+/* Listen */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Überschriften */
+h1, h2 {
+  color: #222;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .crypto-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crypto-images img {
+    width: 100px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}
